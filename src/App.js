@@ -28,6 +28,7 @@ function App() {
       <div>
         {/* <Props  name="arpana" age="30"  /> */}
         <Props {...userdetal}  />
+        {/* add counter */}
        <Counter />
         {/* {products.map((product, index) => (
           <div key={index}>

@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Props from './Props';
 import Counter from './Counter';
+import Array from './array';
+
+
 
 function App() {
   const [products, setProducts] = useState([])
@@ -30,6 +33,8 @@ function App() {
         <Props {...userdetal}  />
         {/* add counter */}
        <Counter />
+      
+      <Array />
         {/* {products.map((product, index) => (
           <div key={index}>
             <h5>{product.title}</h5> 

@@ -3,9 +3,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Props from './Props';
 import Counter from './Counter';
-import Array from './array';
-
-
+import Array from './Array';
 
 function App() {
   const [products, setProducts] = useState([])
@@ -14,7 +12,7 @@ function App() {
   const fetchData = async () => {
     const response = await axios.get('https://fakestoreapi.com/products');
     setProducts(response.data);
-    console.log(response.data)
+   
   };
   const userdetal = {
     name: "Payal",
